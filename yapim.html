@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="game.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src=""></script>
+    <title>Kreaz</title>
+</head>
+<body>
+<header>
+   <div class="navbar">
+    <div class="logo"><a href="index.html">theKREAZ</a></div> 
+    <ul class="links">
+        <li><a href="index.html" target="_self">Anasayfa</a></li> 
+        <li><a href="yapim.html">Nasıl Yaptım?</a></li>   
+        <li><a href="iletisim.html">İletişim</a></li>
+    </ul>
+    <a href="game/game.html" class="action_btn" target="_blank" >Oynamaya Basla</a>     <!--ÖNEMLİ-->       
+    <div class="toggle_btn">
+        <i class="fa-solid fa-bars" style="color: aliceblue;"></i>
+    </div>
+   </div>
+
+   <div class="dropdown_menu">
+    <li><a href="index.html" target="_self">Anasayfa</a></li>
+    <li><a href="yapim.html">Nasıl Yaptım?</a></li>   
+    <li><a href="iletisim.html">İletisim</a></li>
+    <li><a href="game/game.html" class="action_btn" target="_blank" onclick="">Oynamaya Basla</a></li>
+   </div>
+</header>
+
+<main>
+    <section id="hero">
+        <div class="games">
+            <div class="container">
+                <form id="contact">
+                    <h2>Nasıl Yaptım?</h2>
+                    <p> Öncelikle Bu Sayfalarda Çalışmalara Başladım <a href="https://www.w3schools.com/html/default.asp">HTML</a>, 
+                        <a href="https://www.w3schools.com/css/default.asp">CSS</a>, 
+                        <a href="https://github.com/thedaviddias/Front-End-Checklist">GitHub</a>. 
+                        Sonrasında Kendime Çalışma Notları Hazırladım Notlarım Şöyle :
+                    <a href="/html notlarım ouz/Audio.html">Audio</a>, <a href="/html notlarım ouz/Background.html">Background</a>, <a href="/html notlarım ouz/Border.html">Border</a>, 
+                    <a href="/html notlarım ouz/em-rem.html">Em-Rem</a>, <a href="/html notlarım ouz/Flexbox.html">Flexbox</a>, <a href="/html notlarım ouz/Floats.html">Float</a>, 
+                    <a href="/html notlarım ouz/Fonts.html">Fonts</a>, <a href="/html notlarım ouz/Forms.html">Forms</a>, <a href="/html notlarım ouz/TextColor.html">TextColor</a>, 
+                    <a href="/html notlarım ouz/Icons.html">İcon</a>, <a href="/html notlarım ouz/ID-Class.html">İD Class</a>, <a href="/html notlarım ouz/Image.html">İmage</a>, 
+                    <a href="/html notlarım ouz/Inline-Block.html">İnline-Block-HTML</a>, <a href="/html notlarım ouz/InlineBlock.html">İnline-Block-CSS</a>, <a href="/html notlarım ouz/Layout.html">Layout</a>, 
+                    <a href="/html notlarım ouz/Links.html">Link</a>, <a href="/html notlarım ouz/Lists.html">List</a>, <a href="/html notlarım ouz/Margin.html">Margin</a>, 
+                    <a href="/html notlarım ouz/MediaQueries.html">MediaQueries-JS</a>, <a href="/html notlarım ouz/Overflow.html">OverFlow(Scroll Ekleme)</a>, <a href="/html notlarım ouz/Padding.html">Padding</a>, 
+                    <a href="/html notlarım ouz/Paragraph-Header.html">Paragraf Metni</a>, <a href="/html notlarım ouz/Positions.html">Positions</a>, <a href="/html notlarım ouz/Tables.html">Tables</a>, 
+                    <a href="/html notlarım ouz/Video.html">Video</a>.
+
+                     
+                </p>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+<script>
+    const toggle_btn = document.querySelector('.toggle_btn')
+    const toggle_btnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggle_btn.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggle_btnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+</script>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <ul>
+                    <li><a href="#"><h4>the KREAZ</h4></a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
