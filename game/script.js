@@ -141,10 +141,10 @@ function animate() {
       });
 
       if (collision(enemy.x, enemy.y, enemy.r, player.x, player.y, player.r)) {
-        console.log("oyun bitti");
+        console.log("Game Over");
         startdiv.classList.remove("hidden");
-        btn.textContent = "Aglamıcaksan Tekrar?";
-        p.innerHTML = "Kaybettin Haha  <br/>  -Puanın : " + score;
+        btn.textContent = "try again?";
+        p.innerHTML = "Lose  <br/>  Point : " + score;
         playing = false;
       }
 
@@ -164,8 +164,8 @@ function animate() {
       bullet.draw();
     });
     player.draw();
-    scorediv.innerHTML = "Puan : " + score;
-    killdiv.innerHTML = "Öldürme : " + kills;
+    scorediv.innerHTML = "Point : " + score;
+    killdiv.innerHTML = "Kill : " + kills;
   }
 }
 
